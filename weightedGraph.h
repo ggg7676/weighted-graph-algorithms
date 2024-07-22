@@ -59,7 +59,7 @@ public:
     void DijkstraShortestPaths(int start);
 
     //O(E * V) 
-    //works for negative edged and detects negative cycles
+    //works for negative edges and detects negative cycles
     void BellmanFordShortestPaths(int start);
 
 
