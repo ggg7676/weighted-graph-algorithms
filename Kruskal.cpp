@@ -31,8 +31,7 @@ void weightedGraph::KruskalMST()
 
     int mstWeight = 0;
     vector<int>parent(numOfNodes);
-    vector<int>rank(numOfNodes, 0);
-
+    
     for(int i=0; i<numOfNodes; ++i)
         parent[i] = i;
     
