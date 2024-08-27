@@ -8,14 +8,14 @@ struct compareWeight
     }
 };
 
-int weightedGraph::Find(int u, vector<int>& parent)
+int Find(int u, vector<int>& parent)
 {
     if(u != parent[u])
         return Find(parent[u], parent);
     else return u;
 }
 
-void weightedGraph::Union(int u, int v, vector<int>& parent)
+void Union(int u, int v, vector<int>& parent)
 {
     int uParent = Find(u, parent);
     int vParent = Find(v, parent);
