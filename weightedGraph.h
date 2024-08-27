@@ -20,9 +20,6 @@ class weightedGraph
     void copyGraph(const weightedGraph&  wg);
     void deleteGraph();
 
-    int Find(int u, vector<int>& parent);
-    void Union(int u, int v, vector<int>& parent);
-
 public:
     
     //Default constructor
